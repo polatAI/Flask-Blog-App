@@ -35,12 +35,12 @@ class LoginForm(Form):
 
 app = Flask(__name__)
 
-app.secret_key = "blog"
-app.config["MYSQL_HOST"] = "localhost"
-app.config["MYSQL_USER"] = "root"
+app.secret_key = "blog" 
+app.config["MYSQL_HOST"] = "" # siz dolduracaksını
+app.config["MYSQL_USER"] =  "" # siz dolduracaksını
 app.config["MYSQL_PASSWORD"] = ""
-app.config["MYSQL_DB"] = "cdublog"
-app.config["MYSQL_CURSORCLASS"] = "DictCursor"
+app.config["MYSQL_DB"] =  "" # siz dolduracaksını
+app.config["MYSQL_CURSORCLASS"] = "DictCursor
 
 mysql = MySQL(app)
 
